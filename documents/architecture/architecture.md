@@ -12,10 +12,6 @@ version 0.9.0
 
 [JA](architecture_ja.md)
 
-**Table of Contents**
-
-[TOC]
-
 ## 1. Issues
 
 The movement to calculate a company's greenhouse gas emissions and disclose them to stakeholders is gaining momentum on a global scale. According to the [GHG Protocol](https://ghgprotocol.org), companies are required to calculate their greenhouse gas emissions by dividing them into Scope 1 (direct emissions of greenhouse gases), Scope 2 (indirect emissions associated with the generation of electricity, heat/steam), and Scope 3 (indirect emissions other than Scope 2). However, most companies currently only calculate Scope 1 or Scope 2, or calculate Scope 3 approximately by using so-called "secondary data." This situation is ultimately due to the fact that the calculation of Scope 3 corresponds to the Scope 1 of other companies. In other words, it is generally difficult to know the detailed emissions of other companies, even if they are customers. Therefore, [WBCSD/PACT](https://www.carbon-transparency.org) has defined a data model that avoids infringing on corporate confidentiality as much as possible by limiting the content to grasping greenhouse gas emissions, and has released [Technical Specifications for PCF Data Exchange](https://wbcsd.github.io/tr/data-exchange-protocol/) (hereinafter referred to as Tech Spec), which defines a means to access greenhouse gases managed by each company as an API (Application Programming Interface). The aim is that by using this, companies will be able to provide their calculated emissions to their customers, thereby enabling each company to refine their Scope 3.
