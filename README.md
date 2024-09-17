@@ -12,7 +12,7 @@
 
 ## Documents
 
-* [Architecture](documents/architecture.md)
+* [Architecture](documents/architecture/architecture.md)
 * [API Reference](documents/api.html)
 * [Client API Reference](documents/client-api.html)
 
