@@ -1,0 +1,14 @@
+port: 3000
+interfaces:
+  - contextPath: ""
+    interface: "./interface/harmony.yaml"
+    route: "./routes/harmony.yaml"
+    authentication:
+      module: "./logic/authentication.js"
+      function: "authenticate"
+    authorization:
+      module: "./logic/authentication.js"
+      function: "authorize"
+    customErrorHeaders:
+      "Content-Type": "application/json"
+healthCheckPath: "/"

@@ -1,0 +1,57 @@
+services:
+  harmony-db:
+    platform: linux/arm64
+    image: mysql
+    container_name: harmony-db
+    user: 1000:1000
+    environment:
+      MYSQL_ROOT_PASSWORD: "7gI48vRc"
+      MYSQL_USER: harmony
+      MYSQL_PASSWORD: "jlP3w6tY"
+      MYSQL_DATABASE: harmony
+    volumes:
+      - ./database/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./database/harmony.sql:/docker-entrypoint-initdb.d/1_harmony.sql
+      - ./database/demo.sql:/docker-entrypoint-initdb.d/2_demo.sql
+      - ./database/data:/var/lib/mysql
+    ports:
+      - 13306:3306
+    networks:
+      - harmony_network
+  harmony-server:
+    platform: linux/arm64
+    image: pathfinder-harmony
+    container_name: harmony-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_HOST: harmony-db
+      DATABASE_PORT: 3306
+      DATABASE_USERNAME: harmony
+      DATABASE_PASSWORD: jlP3w6tY
+      DATABASE_DATABASE: harmony
+    ports:
+      - 3000:3000
+    networks:
+      - harmony_network
+    depends_on:
+      - harmony-db
+  harmony-web:
+    platform: linux/arm64
+    image: nginx:latest
+    container_name: harmony-web
+    volumes:
+      - ./web/nginx.conf:/etc/nginx/nginx.conf
+      - ./web/error.html:/usr/share/nginx/html/error.html
+      - ./web/sorry.html:/usr/share/nginx/html/sorry.html
+    ports:
+      - 8080:80
+    networks:
+      - harmony_network
+    depends_on:
+      - harmony-server
+
+networks:
+  harmony_network:
+    external: true

@@ -1,0 +1,18 @@
+/keypairs:
+  post:
+    module: ./logic/keypair-manager.js
+    function: updatePublicKey
+  delete:
+    module: ./logic/keypair-manager.js
+    function: deletePublicKey
+/datasources:
+  post:
+    module: ./logic/datasource-manager.js
+    function: updateDataSource
+  delete:
+    module: ./logic/datasource-manager.js
+    function: deleteDataSource
+/events:
+  post:
+    module: ./logic/event-manager.js
+    function: handleEvent
