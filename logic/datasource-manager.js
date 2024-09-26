@@ -128,11 +128,9 @@ export async function updateDataSource(session, request) {
  */
 export async function deleteDataSource(session, request) {
     let organizationId = session.organizationId;
-    let dataSourceId = request.dataSourceId;
-
     let transaction = await connection.transaction();
     try {
-        await transaction("DataSource").delete().where({DataSourceId: dataSourceId, OrganizationId: organizationId});
+        await transaction("DataSource").delete().where({OrganizationId: organizationId});
         await transaction.commit();
     }catch(error) {
         await transaction.rollback();
