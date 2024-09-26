@@ -84,7 +84,7 @@ paths:
         - BearerToken: []
       requestBody:
         content:
-          application/json:
+          application/cloudevents+json:
             schema:
               oneOf:
                 - $ref: '#/components/schemas/CompanyUpdateEvent'
