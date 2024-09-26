@@ -5,7 +5,7 @@
 
 // @ts-check
 
-import { parse, ErrorResponse, ErrorCode } from "arbuscular";
+import { parse, ErrorResponse, ErrorCode, writeLog, LogLevel } from "arbuscular";
 import { createHash, createSign } from "crypto";
 import { v4 as uuid } from "uuid";
 import { connection } from "../utility/database.js";
@@ -152,7 +152,8 @@ async function verifyHttpSignature(session, request) {
     }
     let publicKey = organization.publicKey;
     if(publicKey == null) {
-        throw ErrorResponse(ErrorCode.RequestError, JSON.stringify({code: "BadRequest", message: "Generate a key pair and set a public key."}));
+        writeLog(`Since the organization [${session.organizationId}] does not yet have a public key registered, it is not possible to verify the digital signature.`, LogLevel.warning);
+        return;
     }
     if(!verifySignature(request, publicKey, "SHA256")) {
         throw ErrorResponse(ErrorCode.RequestError, JSON.stringify({code: "BadRequest", message: "The signature is incorrect."}));
