@@ -1,6 +1,6 @@
 {
     "name": "pathfinder-harmony",
-    "version": "0.9.0",
+    "version": "0.9.1",
     "description": "Intermediary Service for Pathfinder Applications",
     "author": "Takuro Okada",
     "license": "MIT",
@@ -10,7 +10,7 @@
         "doc": "redocly build-docs interface/harmony.yaml --output=documents/api.html & redocly build-docs interface/harmony-client.yaml --output=documents/client-api.html"
     },
     "dependencies": {
-        "arbuscular": "^0.9.27",
+        "arbuscular": "^0.9.28",
         "knex": "^3.1.0",
         "mysql2": "^3.11.0"
     }
