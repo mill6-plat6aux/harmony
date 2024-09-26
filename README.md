@@ -28,7 +28,7 @@ docker network create harmony_network
 Launch the web server and database.
 
 ```sh
-docker-compose up
+docker compose up
 ```
 
 
