@@ -129,6 +129,12 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# system design
+*.drawio
+
+# graphic design
+*.afdesign
+
 # backups
 *.bak
 *.bkp
