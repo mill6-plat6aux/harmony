@@ -40,6 +40,10 @@ export async function updatePublicKey(session, request) {
     await addPublicKey(organizationId, publicKey);
 }
 
+/**
+ * @param {number} organizationId 
+ * @param {string} publicKey 
+ */
 async function addPublicKey(organizationId, publicKey) {
     if(organizationId == null || publicKey == null || publicKey.length == 0) {
         throw ErrorResponse(ErrorCode.StateError, "Invalid state.");
