@@ -13,8 +13,8 @@
 ## Documents
 
 * [Architecture](documents/architecture/architecture.md)
-* [API Reference](documents/api.html)
-* [Client API Reference](documents/client-api.html)
+* [API Reference](https://mill6-plat6aux.github.io/harmony-docs/api.html)
+* [Client API Reference](https://mill6-plat6aux.github.io/harmony-docs/client-api.html)
 
 
 ## Launch with Docker

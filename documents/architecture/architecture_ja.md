@@ -90,7 +90,7 @@ Harmony APIは以下の構成からなる。
 
 ここまでが初期設定であり、他社の初期設定も完了していれば、いよいよ外部アプリケーションの発見が可能となる。外部アプリケーションへのエンドポイントと認証情報の要求は、Tech SpecのAction Eventsと同様のCloudEvents形式によるAPIの呼び出しによって行われる（`/events`パス）。
 
-データ形式の詳細については[APIリファレンス](../api.html)を参照のこと。
+データ形式の詳細については[APIリファレンス](https://mill6-plat6aux.github.io/harmony-docs/api.html)を参照のこと。
 
 #### 3.1.2. Harmony Client API
 
@@ -107,7 +107,7 @@ Harmony Client APIのパス構成は以下のとおりひとつだけである�
 | org.wbcsd.pathfinder.Contract.Request.v1 | Tech Spec APIのエンドポイントと認証情報の要求。データは要求元企業（他社）と要求先企業（自社）の情報、要求先へのメッセージ。 |
 | org.wbcsd.pathfinder.Contract.Reply.v1   | Tech Spec APIのエンドポイントと認証情報の要求。データは他社のエンドポイントと認証情報、要求元へのメッセージ。 |
 
-データ形式の詳細については[APIリファレンス](../client-api.html)を参照のこと。
+データ形式の詳細については[APIリファレンス](https://mill6-plat6aux.github.io/harmony-docs/client-api.html)を参照のこと。
 
 #### 3.1.3. 電子署名
 
