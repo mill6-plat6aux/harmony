@@ -1,17 +1,21 @@
 {
     "name": "pathfinder-harmony",
-    "version": "0.9.1",
+    "version": "0.9.2",
     "description": "Intermediary Service for Pathfinder Applications",
     "author": "Takuro Okada",
     "license": "MIT",
     "type": "module",
     "scripts": {
         "start": "arbuscular --setting arbuscular.yaml --log log.yaml",
+        "test": "node test/test.js",
         "doc": "redocly build-docs interface/harmony.yaml --output=documents/api.html & redocly build-docs interface/harmony-client.yaml --output=documents/client-api.html"
     },
     "dependencies": {
         "arbuscular": "^0.9.28",
         "knex": "^3.1.0",
         "mysql2": "^3.11.0"
+    },
+    "devDependencies": {
+        "uuid": "^10.0.0"
     }
 }
