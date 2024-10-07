@@ -1,3 +1,12 @@
+<div align="right">
+    <a href="https://github.com/mill6-plat6aux/harmony">
+        <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="github-mark-white.svg"/>
+            <img src="github-mark.svg" width="32"/>
+        </picture>
+    </a>
+</div>
+
 <div align="center">
     <div>
         <picture>
