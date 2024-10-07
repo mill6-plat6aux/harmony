@@ -1,20 +1,16 @@
----
-title: ""
----
-
 <div align="center">
-    <div>
+    <h1>
         <picture>
             <source media="(prefers-color-scheme: dark)" srcset="title-w.svg"/>
             <img src="title.svg" width="320"/>
         </picture>
-    </div>
+    </h1>
     Intermediary Service for Pathfinder Applications
 </div>
 
 version 0.9.0
 
-[EN](architecture.md)
+[EN](https://mill6-plat6aux.github.io/harmony/architecture/architecture.html)
 
 ## 1. 課題
 
