@@ -1,8 +1,8 @@
 <div align="center">
     <div>
         <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="../../images/title-w.svg"/>
-            <img src="../../images/title.svg" width="320"/>
+            <source media="(prefers-color-scheme: dark)" srcset="title-w.svg"/>
+            <img src="title.svg" width="320"/>
         </picture>
     </div>
     Intermediary Service for Pathfinder Applications
