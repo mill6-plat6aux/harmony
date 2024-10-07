@@ -1,3 +1,7 @@
+---
+title: ""
+---
+
 <div align="center">
     <div>
         <picture>
