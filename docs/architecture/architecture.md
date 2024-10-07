@@ -1,12 +1,10 @@
-<link rel="stylesheet" href="styles.css"/>
-
 <div align="center">
-    <h1>
+    <div>
         <picture>
             <source media="(prefers-color-scheme: dark)" srcset="title-w.svg"/>
             <img src="title.svg" width="320"/>
         </picture>
-    </h1>
+    </div>
     Intermediary Service for Pathfinder Applications
 </div>
 
