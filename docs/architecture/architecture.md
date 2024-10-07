@@ -44,7 +44,7 @@ In practice, end users have contracts with business partners regarding data refe
 
 Therefore, a neutral web server (intermediary service) is prepared separately from the application to mediate the exchange of authentication information with the application endpoint. This makes it possible to efficiently identify the data holder's application from limited information such as the target company identifier, product identifier, and product footprint identifier, and distribute the data with the consent of the parties involved.
 
-<img src="fig1.svg" style="zoom:70%;" />
+<img src="fig1.svg" style="zoom:100%;" />
 
 It should be noted here that the endpoints and authentication information, which are the most important data for solution vendors, are not stored in the intermediary service (in other words, the purpose is not to create a ledger of applications). The fact remains that these must be protected with the utmost security on the application side. The intermediary service literally just helps to exchange endpoints and authentication information and establish communication (peer-to-peer communication) between two applications.
 
@@ -54,7 +54,7 @@ Another important point is whether the requester of the endpoint is really the b
 
 Let us consider a network in which companies in the supply chain use applications that implement Tech Spec API and connect them from downstream to upstream. Achieving traceability means going back through the supply chain beyond simple transactions between companies, for example, when a downstream company accesses the supplier of the component parts for its own product, and then accesses the supplier of the raw materials for those components, and clarifying the breakdown of greenhouse gas emissions for all the elements that make up the product.
 
-<img src="fig2.svg" style="zoom:60%;" />
+<img src="fig2.svg" style="zoom:90%;" />
 
 The Tech Spec data model (product footprint) is limited to expressing only the emissions of a company's own products. The aim of this is to keep the range of expression within the scope of the data owner's rights, but for this reason, traceability cannot be expressed with the product footprint alone.
 
@@ -68,7 +68,7 @@ We have developed the aforementioned intermediary service, which we call Pathfin
 
 ### 3.1. System Configuration
 
-<img src="fig3.svg" style="zoom:75%;" />
+<img src="fig3.svg" style="zoom:90%;" />
 
 Pathfinder Harmony is a simple REST API server. Applications and Pathfinder Harmony communicate with each other through APIs implemented in each, but the Harmony side is called the Harmony API, and the application side is called the Harmony Client API.
 
