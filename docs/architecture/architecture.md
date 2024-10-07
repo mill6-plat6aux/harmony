@@ -94,7 +94,7 @@ Next, the application registers the endpoint and authentication information of t
 
 This is the initial setup, and if the initial setup of other companies has also been completed, it is finally possible to discover external applications. Requests for endpoints and authentication information from external applications are made by calling the API in CloudEvents format, similar to the Action Events in the Tech Spec (`/events` path).
 
-For details on the data format, see the [API Reference](https://mill6-plat6aux.github.io/harmony-docs/api.html).
+For details on the data format, see the [API Reference](https://mill6-plat6aux.github.io/harmony/reference/api.html).
 
 #### 3.1.2. Harmony Client API
 
@@ -111,7 +111,7 @@ The types that can be set in the `/events` path are as follows:
 | org.wbcsd.pathfinder.Contract.Request.v1 | Request for Tech Spec API endpoint and authentication information. Data includes information on the requesting company (other company) and the requested company (our company), and a message to the requested company. |
 | org.wbcsd.pathfinder.Contract.Reply.v1   | Tech Spec API endpoint and authentication request. Data includes other company's endpoint and authentication information, and message to requester. |
 
-For details on the data format, please refer to the [API Reference](https://mill6-plat6aux.github.io/harmony-docs/client-api.html).
+For details on the data format, please refer to the [API Reference](https://mill6-plat6aux.github.io/harmony/reference/client-api.html).
 
 #### 3.1.3. Digital signature
 
