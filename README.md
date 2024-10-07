@@ -40,3 +40,8 @@ docker compose up
 ## Developers
 
 [Takuro Okada](mailto:mill6.plat6aux@gmail.com)
+
+
+---
+
+&copy; Takuro Okada

@@ -334,3 +334,7 @@ Pathfinder Harmonyはエンドポイントと認証情報の要求を受け付�
 ## 5. Developers
 
 [Takuro Okada](mailto:mill6.plat6aux@gmail.com)
+
+---
+
+&copy; Takuro Okada

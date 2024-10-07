@@ -339,3 +339,7 @@ The subsequent processing is the same as the example in [3.2. Application discov
 ## 5. Developers
 
 [Takuro Okada](mailto:mill6.plat6aux@gmail.com)
+
+---
+
+&copy; Takuro Okada
