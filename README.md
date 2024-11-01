@@ -15,9 +15,17 @@
 * [Architecture](https://mill6-plat6aux.github.io/harmony/architecture/architecture.html)
 * [API Reference](https://mill6-plat6aux.github.io/harmony/reference/api.html)
 * [Client API Reference](https://mill6-plat6aux.github.io/harmony/reference/client-api.html)
+* [Basic Demo](https://mill6-plat6aux.github.io/harmony/demo/basic-demo.html)
 
 
-## Launch with Docker
+## Requirements
+
+* Docker 20.10 later
+
+If Node.js is not installed on your system, see [here](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
+
+
+## Launch
 
 Create the network to access Pathfinder applications; Pathfinder applications should also be deployed within this network.
 
