@@ -1,4 +1,24 @@
-<div><font size="6">Basic Demo</font><div>
+<div align="right">
+    <a href="https://github.com/mill6-plat6aux/harmony">
+        <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="github-mark-white.svg"/>
+            <img src="github-mark.svg" width="32"/>
+        </picture>
+    </a>
+</div>
+
+<div align="center">
+    <div>
+        <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="title-w.svg"/>
+            <img src="title.svg" width="320"/>
+        </picture>
+    </div>
+    Intermediary Service for Pathfinder Applications
+    <br/><br/>
+</div>
+
+<div><font size="6">Basic Demo</font></div>
 
 ## 1. System Configuration
 
